@@ -7,6 +7,7 @@ import detailAna from '@/pages/detail/analysis'
 import detailCount from '@/pages/detail/count'
 import detailFor from '@/pages/detail/forecast'
 import detailPub from '@/pages/detail/publish'
+import orderList from '@/pages/orderList'
 Vue.use(Router)
 
 export default new Router({
@@ -15,6 +16,11 @@ export default new Router({
       path: '/',
       name: 'indexPage',
       component: indexPage
+    },
+    {
+    	path:'/orderList',
+    	name:'orderList',
+    	component:orderList
     },
     {
     	path:'/detail',
